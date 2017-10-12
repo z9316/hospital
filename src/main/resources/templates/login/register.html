@@ -1,0 +1,143 @@
+<!DOCTYPE html >
+<html  xmlns:th="http://www.thymeleaf.org"  >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>用户帮助</title>
+<script type="text/javascript" src="../static/easyui/jquery.min.js"></script>
+<script type="text/javascript" src="../static/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="../static/easyui/easyui-lang-zh_CN.js"></script>
+<link type="text/css" rel="stylesheet" href="../static/bootstrap/bootstrap.min.css" ></link>
+<script type="text/javascript" src="../static/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="../static/js/tool/jquery.cookie.js"></script>
+<script type="text/javascript" src="../static/js/login/register.js"></script>
+
+<script type="text/javascript" src="../static/js/tool/encodeUtil.js"></script>
+<script type="text/javascript" src="../static/js/tool/JQuery.md5.js"></script>
+
+<style type="text/css">
+html,boby{width:100%;height:100%;marign:0;}
+#title{
+width:100%;
+height:40px;
+color: #fafafa;
+text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+background-color:#00EC00;
+text-align:center;
+font-size:26px;
+}
+#head{
+width:100%;
+height:20px;
+background-color:pink;
+}
+#head #button1:hover{background-color: brown;color:white;}
+#head #button2:hover{background-color: brown;color:white;}
+#head a{
+cursor: pointer;
+text-decoration: none;
+}
+#main{
+height:510px;
+width:100%;
+background-color: #9ACD32;
+}
+
+#tab1{
+height:510px;width:100%;
+display: block;
+padding-top: 100px;
+}
+
+#tab1 form table{
+margin: 0 auto;
+}
+
+#tab11{
+height:510px;width:100%;
+display: none;
+padding-top: 100px;
+}
+
+#tab11 form table{
+margin: 0 auto;
+}
+
+#tab2{
+height:510px;width:100%;
+display:none;
+padding-top: 100px;
+}
+
+#tab2 form table{
+margin: 0 auto;
+}
+
+#tab3{
+height:510px;width:100%;
+display:none;
+padding-top: 100px;
+}
+
+#tab3 form table{
+margin: 0 auto;
+}
+
+label{font-weight: 600 !important;}
+</style>
+</head>
+<body>
+<div id="title">用户帮助</div>
+<div id="head">&nbsp;&nbsp;
+<a id="button1">忘记密码？</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a id="button2">注册新用户</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a id="button3">注销用户</a>
+</div>
+<div id="main">
+<div id="tab1">
+<form>
+<table>
+<caption>忘记密码？</caption>
+<tr><td>用户名：</td><td><input type="text" id="username1"></input></td><td></td></tr>
+<tr><td>邮箱名：</td><td><input type="text" id="email1"></input></td><td><input type="button" id ="emailsave1" value="发送邮件验证码"></input></td></tr>
+<tr><td>验证码：</td><td><input type="password" id="emailkey1"></input></td><td></td></tr>
+<tr><td colspan="3"><input type="button" id = "save1" value="确定"></input><input type="reset" value="重置"></input></td></tr>
+</table>
+</form>
+</div>
+
+<div id="tab11">
+<form>
+<table>
+<caption>忘记密码？</caption>
+<tr><td>输入新密码：</td><td><input type="password" id="password1"></input></td><td></td></tr>
+<tr><td>再次输入密码：</td><td><input type="password" id="newpassword1"></input></td><td></td></tr>
+<tr><td colspan="3"><input type="button" id = "save11" value="确定"></input><input type="reset" value="重置"></input></td></tr>
+</table>
+</form>
+</div>
+
+<div id="tab2">
+<form>
+<table>
+<caption>注册新用户</caption>
+<tr><td>用户名：</td><td><input type="text" id="username2" title="用户名必须是数字或英文字母且长度必须是六位到十八位"></input></td><td></td></tr>
+<tr><td>邮箱名：</td><td><input type="text" id="email2"></input></td><td></td></tr>
+<tr><td>密码：</td><td><input type="password" id="key2" title="密码必须是数字或英文字母且长度必须是六位到十八位"></input></td><td></td></tr>
+<tr><td>确认密码：</td><td><input type="password" id="newkey2" title="密码必须是数字或英文字母且长度必须是六位到十八位"></input></td><td></td></tr>
+<tr><td colspan="3"><input type="button" id="save2" value="确认"></input><input type="reset" value="重置"></input></td></tr>
+</table>
+</form>
+</div>
+<div id="tab3">
+<form>
+<table>
+<caption>注销用户</caption>
+<tr><td>用户名：</td><td><input type="text" id="username3"></input></td><td></td></tr>
+<tr><td>密码：</td><td><input type="password" id="key3"></input></td><td></td></tr>
+<tr><td colspan="3"><input type="button" id = "save3" value="确定"></input><input type="reset" value="重置"></input></td></tr>
+</table>
+</form>
+</div>
+</div>
+</body>
+</html>

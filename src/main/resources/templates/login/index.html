@@ -1,0 +1,134 @@
+<!DOCTYPE html >
+<html  xmlns:th="http://www.thymeleaf.org"  >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>欢迎来到绿茶中药店药品查询系统</title>
+<script type="text/javascript" src="../static/easyui/jquery.min.js"></script>
+<script type="text/javascript" src="../static/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="../static/easyui/easyui-lang-zh_CN.js"></script>
+<link type="text/css" rel="stylesheet" href="../static/bootstrap/bootstrap.min.css" ></link>
+<script type="text/javascript" src="../static/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="../static/js/login/index.js"></script>
+
+<script type="text/javascript" src="../static/js/tool/encodeUtil.js"></script>
+<script type="text/javascript" src="../static/js/tool/JQuery.md5.js"></script>
+<style type="text/css">
+html,body{height:100%;margin:0px;}
+#floor1{
+background-color: pink;
+height:22px;
+width:100%;
+border: solid 1px white;
+padding-top: 2px;
+}
+ #floor1 ol li{
+width:6%;
+float: right;
+list-style: none;
+color:gray;
+cursor: pointer;
+} 
+#floor2{
+/* background-image:url("../static/image/login/login.jpg"); */
+background-color:#9ACD32;
+background-repeat:no-repeat; 
+background-size:cover;
+width:100%;
+height:528px;
+border: solid 1px white;
+}
+ #floor2 #room1{
+height:500px;
+width:50%;
+float:left;
+padding-top: 150px;
+color: #fafafa;
+letter-spacing: 0;
+text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+font-size: 60px;
+}
+#floor2 #room2{
+height:500px;
+width:50%;
+float:left;
+}
+form{
+height:0px;
+width:50%;
+margin:0 auto;
+margin-top:125px;
+padding-top:0px;
+}
+form table{
+height:0px;
+margin-left:13%;
+} 
+#floor3{
+padding-top: 2px;
+background-color: pink;
+height:22px;
+width:100%;
+border: solid 1px white;
+}
+#register{cursor:pointer;text-decoration: none;}
+</style>
+
+</head>
+<body>
+<div id="floor1">
+<ol>
+<li><a href="/hospital/aboutus">关于我们</a></li>
+<li><a href="/hospital/feedback">在线客服</a></li>
+</ol>
+</div>
+<div id="floor2">
+<div id="room1" align="center">
+<div>药&nbsp;&nbsp;品&nbsp;&nbsp;查&nbsp;&nbsp;询&nbsp;&nbsp;系&nbsp;&nbsp;统</div>
+<!-- <img src="image/login/login2.jpg" height="30%" width="30%"> -->
+</div>
+<div id="room2">
+<div>
+<form method="post">
+<table>
+<caption align="top" style="color:yellow;">账号登录</caption>
+<tr>
+<td style="color:orange;">用户名：</td>
+<td colspan="2"><input type="text" name="username" size="19" title="用户名必须是数字或英文字母且长度必须是六位到十八位"></input></td>
+</tr>
+<tr>
+<td style="color:orange;">密　码：</td>
+<td colspan="2"><input type="password" name="password" size="19" title="密码必须是数字或英文字母且长度必须是六位到十八位"></input></td>
+</tr>
+<tr>
+<td style="color:orange;">验证码：</td>
+<td><input type="text" name="yzm" size="5" title="请输入四位有效数字或英文字母"></input></td>
+<td id="yzm">
+<img id="codevalidate" src="/hospital/getYZM" width="88" height="26" style="margin-left: 10px;cursor: pointer;" onclick="changeUrl()" title="看不清？点我换一张" ></img>
+</td>
+</tr>
+<tr>
+<td colspan="3" align="center">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="3" align="center">
+<input type="button" value="提交" name="submit" ></input>
+<input type="reset" value="重置" name="reset" ></input></td>
+</tr>
+
+<!-- <td colspan="3" align="center">&nbsp;</td></tr> -->
+<tr>
+<td colspan="3" align="center">
+<a id="register" style="color: red;">忘记密码或没有注册？</a>
+</td>
+</tr>
+</table>
+</form>
+</div><!-- inner -->
+</div>
+</div>
+
+<div id="floor3" align="center">
+&copy; 2017 zhouzs. All rights reserved.
+</div>
+</body>
+</html>

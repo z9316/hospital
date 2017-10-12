@@ -1,0 +1,105 @@
+<!DOCTYPE html >
+<html  xmlns:th="http://www.thymeleaf.org"  >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>联系我们</title>
+<script type="text/javascript" src="../static/easyui/jquery.min.js"></script>
+<script type="text/javascript" src="../static/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="../static/easyui/easyui-lang-zh_CN.js"></script>
+<link type="text/css" rel="stylesheet" href="../static/bootstrap/bootstrap.min.css" ></link>
+<script type="text/javascript" src="../static/bootstrap/bootstrap.min.js"></script>
+
+<script>
+jQuery(function($){
+	document.onkeydown=function(ev){
+	    var oEvent=ev||event;//获取事件对象(IE和其他浏览器不一样，这里要处理一下浏览器的兼容性event是IE；ev是chrome等)
+	    //Esc键的keyCode是27
+	    if(oEvent.keyCode==27)
+	    {
+	       //  alert('按键了');
+	    	window.location.href = '/hospital/login';
+	    }
+	}
+});
+	</script>
+
+<script type="text/javascript" src="../static/js/tool/encodeUtil.js"></script>
+<script type="text/javascript" src="../static/js/tool/JQuery.md5.js"></script>
+<style type="text/css">
+html,body{height:100%;margin:0px;}
+#floor1{
+background-color: pink;
+height:22px;
+width:100%;
+border: solid 1px white;
+padding-top: 2px;
+}
+ #floor1 ol li{
+width:6%;
+float: right;
+list-style: none;
+color:gray;
+cursor: pointer;
+} 
+#floor2{
+/* background-image:url("../static/image/login/login.jpg"); */
+background-color:#9ACD32;
+background-repeat:no-repeat; 
+background-size:cover;
+width:100%;
+height:528px;
+border: solid 1px white;
+}
+
+#center{
+height:100%;
+width:100%;
+margin: 0 auto;
+padding-top: 120px;
+justify-content:center;/* 子元素水平居中 */
+}
+
+h3{
+padding-left:590px;
+width:100%;
+}
+p.t1{
+padding-left:450px;
+width:100%;
+}
+p.t2{
+padding-left:500px;
+width:100%;
+}
+
+#floor3{
+padding-top: 2px;
+background-color: pink;
+height:22px;
+width:100%;
+border: solid 1px white;
+}
+
+</style>
+
+</head>
+<body>
+<div id="floor1">
+<ol>
+<li><a href="">关于我们</a></li>
+<li><a href="/hospital/feedback">在线客服</a></li>
+</ol>
+</div>
+<div id="floor2">
+<div id="center">
+<h3>序言</h3>
+<p class="t1">本作是由北大青鸟的学生创作，请尊重本人劳动成果。</p>
+<p class="t2">作者邮箱：2898115960@qq.com</p>
+</div>
+</div>
+
+<div id="floor3" align="center">
+&copy; 2017 zhouzs. All rights reserved.
+</div>
+</body>
+</html>

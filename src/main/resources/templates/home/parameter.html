@@ -1,0 +1,73 @@
+<!DOCTYPE html >
+<html  xmlns:th="http://www.thymeleaf.org"  >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>参数配置页面</title>
+<script type="text/javascript" src="../static/easyui/jquery.min.js"></script>
+<script type="text/javascript" src="../static/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="../static/easyui/easyui-lang-zh_CN.js"></script>
+<link type="text/css" rel="stylesheet" href="../static/bootstrap/bootstrap.min.css" ></link>
+<script type="text/javascript" src="../static/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="../static/js/tool/jquery.cookie.js"></script>
+<script type="text/javascript" src="../static/js/home/parameter.js"></script>
+
+<style type="text/css">
+html,body{height:100%;margin:0px;}
+#title{
+width:100%;
+height:40px;
+color: #fafafa;
+text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+background-color:#00EC00;
+text-align:center;
+font-size:26px;
+}
+#upper{
+width:100%;
+height:34px;
+background-color:pink;
+}
+#lower{
+width:100%;
+position: absolute; top: 60px; bottom: 0; left: 0;
+padding-top:14px;
+background-color:#9ACD32;
+height:511px;
+}
+
+</style>
+
+<script type="text/javascript" src="../static/js/tool/encodeUtil.js"></script>
+
+</head>
+<body style="position: relative;">
+<div id="title">参数配置页面</div>
+<div id="upper" >
+</div>
+
+<div id="lower">
+<form>
+<table style="margin: 0 auto;">
+<tr><td colspan="3">&nbsp;</td></tr>
+<tr><td>上传文件路径：</td><td><input type="text" id="text" title="输入的格式范例：F:/text/"></input></td><td></td></tr>
+<tr><td colspan="3">&nbsp;</td></tr>
+<tr><td>索引文件路径：</td><td><input type="text" id="scan" title="输入的格式范例：F:/scan/"></input></td><td></td></tr>
+<tr><td colspan="3">&nbsp;</td></tr>
+<tr><td colspan="3">&nbsp;</td></tr>
+<tr><td>发件人邮箱服务器名称：</td><td><input type="text" id="host" ></input></td><td></td></tr>
+<tr><td colspan="3">&nbsp;</td></tr>
+<tr><td>发件人邮箱服务器端口：</td><td><input type="text" id="port" ></input></td><td></td></tr>
+<tr><td colspan="3">&nbsp;</td></tr>
+<tr><td>发件人姓名：</td><td><input type="text" id="name" ></input></td><td></td></tr>
+<tr><td colspan="3">&nbsp;</td></tr>
+<tr><td>发件人邮箱名称：</td><td><input type="text" id="email" ></input></td><td></td></tr>
+<tr><td colspan="3">&nbsp;</td></tr>
+<tr><td>发件人邮箱密码：</td><td><input type="password" id="password" ></input></td><td></td></tr>
+<tr><td colspan="3">&nbsp;</td></tr>
+<tr><td colspan="3" align="center"><input type="button" value="确定" id="save"></input></td></tr>
+</table>
+</form>
+</div>
+
+</body>
+</html>

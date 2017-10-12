@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/2002/xmlspec/dtd/2.10/xmlspec.dtd">
+<robot> 
+  <question> 
+    <data name="1">who are you?</data> 
+    <data name="2">你好</data> 
+    <data name="3">我们的口号是</data> 
+    <data name="4">为什么来用绿茶中药店？</data>
+    <data name="5">为什么登录不上</data>
+  </question>  
+  <answer> 
+    <data name="1">I don't know</data> 
+    <data name="2">大家好，才是真的好</data> 
+    <data name="3">没有蛀牙</data>
+    <data name="4">绿茶中药店帮你记忆中药疗效，是您的好帮手。选择绿茶中药店，没问题。</data>
+    <data name="5">请您先注册您的账号</data>
+  </answer> 
+</robot>
